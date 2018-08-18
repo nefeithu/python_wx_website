@@ -16,7 +16,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-	# 将/happytea/路径下请求路由到app的url定义文件中
-    url(r'^happytea/', include('apps.happytea.urls', namespace="happytea")),
+    # 将/happytea/wxmp/路径下的消息路由到 views中wxmp函数处理
+    url(r'^wxmp/$', views.wxmp, name='wxmp'),
 ]

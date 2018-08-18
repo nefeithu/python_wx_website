@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	# 添加新创建的app
+    'apps.happytea'
 )
 
 MIDDLEWARE_CLASSES = (
