@@ -47,8 +47,8 @@ CTYPE html>
 
         {% for blog in blog_list %}
             <h2>{{ blog.title }}</h2>
-            <p>{{ blog.timestamp }}</p>
-            <p>{{ blog.body }}</p>
+            <p>{{ blog.pub_date }}</p>
+            <p>{{ blog.content }}</p>
         {% endfor %}
 
       </div>
